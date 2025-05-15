@@ -1,4 +1,5 @@
 #include "node.h"
+#include <stdio.h>
 
 node* createNode(int value, node* next, node* prev){
     node* n = (node *)malloc(sizeof(node));
@@ -10,7 +11,7 @@ node* createNode(int value, node* next, node* prev){
 }
 
 node* appendNode(node* head,node* n){
-
+    
     if (head){
         node* tmp = head;
         while (tmp->next != NULL){
@@ -20,15 +21,17 @@ node* appendNode(node* head,node* n){
         tmp->next = n;
 
         return head;
-    } else {
-        return n;
-    }
+    } 
+    
+    return n;
+    
 
 }
 
 node* appendNodeToStart(node* head, node* n){
 
     if (!n) return head;
+    if (head == n) return head;
 
     n->prev = NULL;
 

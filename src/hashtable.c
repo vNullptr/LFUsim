@@ -28,9 +28,11 @@ node* get(HashTable* T,int value){
 
 }
 
-node* insert(HashTable* T,node* newNode){
+node* insert(HashTable* T, int value){
 
-    int index = hash(newNode->value);
+    int index = hash(value);
+    node* newNode = createNode(value, NULL, NULL);
+
     if (T->table[index]){
         appendNode(T->table[index], newNode);
     } else {

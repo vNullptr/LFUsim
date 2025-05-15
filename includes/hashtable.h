@@ -11,5 +11,5 @@ typedef struct{
 int hash(int value);
 void initHashTable(HashTable* T);
 node* get(HashTable* T,int value);
-node* insert(HashTable* T,node* newNode);
+node* insert(HashTable* T,int value);
 void detach(HashTable* T,node* n);

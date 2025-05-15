@@ -21,6 +21,7 @@ void put(Cache *C, int value){
         node* toMove = findNode(C->head,value);
         if (toMove->next) toMove->next->prev = toMove->prev;
         if (toMove->prev) toMove->prev->next = toMove->next;
+
         C->head = appendNodeToStart(C->head, toMove);
 
     } else {
@@ -42,7 +43,7 @@ void put(Cache *C, int value){
 
         node* LRUNode = createNode(value, NULL, NULL);
 
-        insert(&C->T, LRUNode);
+        insert(&C->T, value);
 
         C->head = appendNodeToStart(C->head, LRUNode);
         if (!C->tail) C->tail = LRUNode;

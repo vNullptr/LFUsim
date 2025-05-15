@@ -1,0 +1,13 @@
+# ninja log v6
+2	211	7690153396379323	build.ninja	e279935de1e9ccbf
+150	274	7690144696664957	MRULFUsim.exe	30ba4dfc7ee089de
+18	93	7690138243581794	src/CMakeFiles/LFUlib.dir/hashtable.c.obj	fc60bf690508bbce
+17	731	7690074642531468	src/CMakeFiles/LFUlib.dir/node.c.obj	bfea84312326d4d5
+90	150	7690144696062771	src/libLFUlib.a	a3e4a44b2c4df8ae
+21	89	7690144695376335	src/CMakeFiles/LFUlib.dir/cache.c.obj	bba5643fd44ff0f6
+7	83	7690153422840946	src/CMakeFiles/LFUlib.dir/node.c.obj	bafd43379ffc3a0b
+4	84	7690153422805952	src/CMakeFiles/LFUlib.dir/hashtable.c.obj	1d74d4214a05b175
+14	85	7690153422906128	CMakeFiles/LFUsim.dir/main.c.obj	99c4312f7d2ff65
+10	86	7690153422871003	src/CMakeFiles/LFUlib.dir/cache.c.obj	79938d92c08df24f
+86	306	7690153423628674	src/libLFUlib.a	a3e4a44b2c4df8ae
+306	492	7690153425831130	LFUsim.exe	29af946cd2b9bfb7

@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/tudor/Downloads/LFUsim-main/LFUsim-main/build/cmake_install.cmake",
+		"C:/Users/tudor/Downloads/LFUsim-main/LFUsim-main/build/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

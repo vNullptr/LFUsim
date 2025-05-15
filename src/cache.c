@@ -15,7 +15,6 @@ Cache createCache(int size){
 void put(Cache *C, int value){
 
     if (get(&C->T, value)){ // hit
-        printf("hit [%i]", value);
         if (C->curr_size == 1) return;
 
         node* toMove = findNode(C->head,value);
@@ -24,10 +23,8 @@ void put(Cache *C, int value){
 
         C->head = appendNodeToStart(C->head, toMove);
 
-    } else {
-        printf("miss [%i]", value);
+    } else { // miss
         if (C->curr_size == C->size) {
-            printf("[full]");
             node* toDelete = C->tail;
             detach(&C->T, get(&C->T,toDelete->value));
             C->tail = toDelete->prev;

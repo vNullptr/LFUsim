@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libLFUlib.a CMakeFiles/LFUlib.dir/hashtable.c.obj CMakeFiles/LFUlib.dir/node.c.obj CMakeFiles/LFUlib.dir/cache.c.obj
-C:\MinGW\bin\ranlib.exe libLFUlib.a
